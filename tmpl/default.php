@@ -11,7 +11,7 @@ defined('_JEXEC') or die;
 
 // Note. It is important to remove spaces between elements.
 ?>
-<div class="menu<?php echo $class_sfx;?>"<?php
+<div class="menu<?php echo $class_sfx; if($useDefault): echo ' footer-sitemap-menu';?>"<?php
 	$tag = '';
 	if ($params->get('tag_id')!=NULL) {
 		$tag = $params->get('tag_id').'';
@@ -23,7 +23,7 @@ $level = 0;
 
 foreach ($list as $i => &$item) :
 	if($i % $columns == 0) {
-		echo '<ul class="footer-sitemap-menu">';
+		echo '<ul>';
 	}
 
 	$class = 'item-'.$item->id;
