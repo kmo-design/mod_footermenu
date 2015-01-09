@@ -27,7 +27,7 @@ if(count($list)) {
 	require JModuleHelper::getLayoutPath('mod_footermenu', $params->get('layout', 'default'));
 }
 
-if(useDefault) {
+if($useDefault) {
     $document =& JFactory::getDocument();
     $document->addStyleSheet(JURI::base().'modules/mod_footermenu/css/default.css');
 }
