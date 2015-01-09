@@ -21,7 +21,13 @@ $path	= isset($active) ? $active->tree : array();
 $showAll	= $params->get('showAllChildren');
 $class_sfx	= htmlspecialchars($params->get('class_sfx'));
 $columns	= ceil(count($list) / (int) $params->get('columns'));
+$useDefault	= $params->get('useDefault');
 
 if(count($list)) {
 	require JModuleHelper::getLayoutPath('mod_footermenu', $params->get('layout', 'default'));
+}
+
+if(useDefault) {
+    $document =& JFactory::getDocument();
+    $document->addStyleSheet(JURI::base().'modules/mod_footermenu/css/default.css');
 }

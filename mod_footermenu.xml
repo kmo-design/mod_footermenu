@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension
 	type="module"
-	version="2.5"
+	version="3.1"
 	client="site"
 	method="upgrade">
-	<name>Footer Sitemap Menu</name>
+	<name>Footer Menu</name>
 	<author>KMO Design</author>
-	<creationDate>September 2013</creationDate>
+	<creationDate>January 2015</creationDate>
 	<copyright>Copyright (C) 2013-2014 KMO Design Pty Ltd. All rights reserved.</copyright>
 	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
 	<authorEmail>support@kmo.com.au</authorEmail>
@@ -24,7 +24,7 @@
 		<language tag="en-GB">language/en-GB/en-GB.mod_footermenu.ini</language>
 		<language tag="en-GB">language/en-GB/en-GB.mod_footermenu.sys.ini</language>
 	</languages>
-	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_MENU" />
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_FOOTERMENU" />
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
@@ -34,30 +34,11 @@
 					label="MOD_FOOTERMENU_FIELD_MENUTYPE_LABEL"
 					description="MOD_FOOTERMENU_FIELD_MENUTYPE_DESC" />
 				<field
-					name="columns"
-					type="list"
-					default="0"
-					label="MOD_FOOTERMENU_FIELD_COLUMNS_LABEL"
-					description="MOD_FOOTERMENU_FIELD_COLUMNS_DESC"
-					>
-					<option value="1">J1</option>
-					<option value="2">J2</option>
-					<option value="3">J3</option>
-					<option value="4">J4</option>
-					<option value="5">J5</option>
-					<option value="6">J6</option>
-					<option value="7">J7</option>
-					<option value="8">J8</option>
-					<option value="9">J9</option>
-					<option value="10">J10</option>
-				</field>
-				<field
 					name="startLevel"
 					type="list"
 					default="1"
 					label="MOD_FOOTERMENU_FIELD_STARTLEVEL_LABEL"
-					description="MOD_FOOTERMENU_FIELD_STARTLEVEL_DESC"
-				>
+					description="MOD_FOOTERMENU_FIELD_STARTLEVEL_DESC">
 					<option value="1">J1</option>
 					<option value="2">J2</option>
 					<option value="3">J3</option>
@@ -74,8 +55,7 @@
 					type="list"
 					default="0"
 					label="MOD_FOOTERMENU_FIELD_ENDLEVEL_LABEL"
-					description="MOD_FOOTERMENU_FIELD_ENDLEVEL_DESC"
-					>
+					description="MOD_FOOTERMENU_FIELD_ENDLEVEL_DESC">
 					<option value="0">JALL</option>
 					<option value="1">J1</option>
 					<option value="2">J2</option>
@@ -99,6 +79,40 @@
 						value="0">JNO</option>
 					<option
 						value="1">JYES</option>
+				</field>
+			</fieldset>
+
+			<fieldset
+				name="layout">
+				<field
+					name="use_default_stylesheet"
+					type="radio"
+					default="0"
+					label="MOD_FOOTERMENU_FIELD_USEDEFAULT_LABEL"
+					description="MOD_FOOTERMENU_FIELD_USEDEFAULT_DESC">
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">JYES</option>
+				</field>
+				<field
+					name="columns"
+					type="list"
+					default="0"
+					label="MOD_FOOTERMENU_FIELD_COLUMNS_LABEL"
+					description="MOD_FOOTERMENU_FIELD_COLUMNS_DESC">
+					<option value="1">J1</option>
+					<option value="2">J2</option>
+					<option value="3">J3</option>
+					<option value="4">J4</option>
+					<option value="5">J5</option>
+					<option value="6">J6</option>
+					<option value="7">J7</option>
+					<option value="8">J8</option>
+					<option value="9">J9</option>
+					<option value="10">J10</option>
+					<option value="11">J11</option>
+					<option value="12">J12</option>
 				</field>
 			</fieldset>
 

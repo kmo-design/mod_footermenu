@@ -1,8 +1,8 @@
 <?php
 /**
- * @package		Footer Menu for Joomla! 2.5+
+ * @package		Footer Menu for Joomla! 3.0+
  * @subpackage	mod_footermenu
- * @copyright	Copyright (C) 2013-2014 KMO Design Pty Ltd. All rights reserved.
+ * @copyright	Copyright (C) 2013-2015 KMO Design Pty Ltd. All rights reserved.
  * @license     GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
  */
 
@@ -11,8 +11,7 @@ defined('_JEXEC') or die;
 
 // Note. It is important to remove spaces between elements.
 ?>
-
-<div class="menu<?php echo $class_sfx;?>"<?php
+<ul class="nav menu<?php echo $class_sfx;?>"<?php
 	$tag = '';
 	if ($params->get('tag_id')!=NULL) {
 		$tag = $params->get('tag_id').'';
@@ -24,7 +23,7 @@ $level = 0;
 
 foreach ($list as $i => &$item) :
 	if($i % $columns == 0) {
-		echo '<ul>';
+		echo '<ul class="footer-sitemap-menu">';
 	}
 
 	$class = 'item-'.$item->id;
