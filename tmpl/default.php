@@ -11,7 +11,7 @@ defined('_JEXEC') or die;
 
 // Note. It is important to remove spaces between elements.
 ?>
-<div class="menu<?php echo $class_sfx; if($useDefault): echo ' footer-sitemap-menu';?>"<?php
+<div class="menu<?php echo $class_sfx; if($useDefault) { echo ' footer-sitemap-menu'; }?>"<?php
 	$tag = '';
 	if ($params->get('tag_id')!=NULL) {
 		$tag = $params->get('tag_id').'';
