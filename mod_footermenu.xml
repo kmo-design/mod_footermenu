@@ -84,7 +84,7 @@
 			</fieldset>
 
 			<fieldset
-				name="layout">
+				name="layout" label="Layout Options">
 				<field
 					name="use_default_stylesheet"
 					type="radio"

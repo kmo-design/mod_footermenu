@@ -21,7 +21,7 @@ $path	= isset($active) ? $active->tree : array();
 $showAll	= $params->get('showAllChildren');
 $class_sfx	= htmlspecialchars($params->get('class_sfx'));
 $columns	= ceil(count($list) / (int) $params->get('columns'));
-$useDefault	= $params->get('useDefault');
+$useDefault	= $params->get('use_default_stylesheet');
 
 if(count($list)) {
 	require JModuleHelper::getLayoutPath('mod_footermenu', $params->get('layout', 'default'));
